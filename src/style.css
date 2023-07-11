@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+footer {
+  font-family: "Poppins";
+  text-align: center;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+footer {
+  margin: 100px 0;
+}
+
+.hero-container {
+  margin-top: 30px;
+  padding: 20px 0;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/malaga.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
