@@ -1,7 +1,8 @@
 h1,
 h2,
 h3,
-footer {
+footer,
+.more-link {
   font-family: "Poppins";
   text-align: center;
 }
@@ -10,15 +11,17 @@ h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  line-height: 144px;
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 36px;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 footer {
@@ -27,13 +30,45 @@ footer {
 
 .hero-container {
   margin-top: 30px;
-  padding: 20px 0;
+  padding: 40px 0;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
     ),
     url("../images/malaga.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.more-link {
+  background-color: white;
+  width: 100px;
+  padding: 16px 32px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 750px) {
+  h1 {
+    line-height: 1;
+    font-size: 54px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+  .hero-container {
+    margin-top: 0;
+  }
+  .more-link {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
