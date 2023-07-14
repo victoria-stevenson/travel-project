@@ -182,6 +182,7 @@ footer a {
   background-color: #272744;
   padding: 16px;
   text-decoration: none;
+  border: 2px solid #272744;
   border-radius: 2px;
   display: block;
   margin: 0 auto;
@@ -199,6 +200,7 @@ footer a {
   background-color: white;
   border: 2px solid #272744;
   color: #272744;
+  transition: all 150ms ease-in-out;
 }
 
 @media (max-width: 960px) {
