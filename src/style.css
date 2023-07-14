@@ -277,9 +277,12 @@ footer a {
   .embed {
     aspect-ratio: 16/9;
   }
-
   .grid-gallery {
     grid-template-columns: 1fr;
+  }
+  .content-container-2,
+  .content-container-3 {
+    padding: 30px;
   }
 }
 
