@@ -106,8 +106,14 @@ footer a {
 }
 
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
 }
+
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
 .content-container-1 h5,
 .content-container-2 h5 {
   font-family: "Poppins";
@@ -177,6 +183,11 @@ footer a {
   font-size: 16px;
 }
 
+.card-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .btn {
   color: white;
   background-color: #272744;
@@ -244,6 +255,15 @@ footer a {
   }
   .grid-3-cards {
     grid-template-columns: 1fr;
+  }
+  .card-header {
+    grid-template-columns: 1fr;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
 
