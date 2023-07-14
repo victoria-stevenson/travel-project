@@ -107,10 +107,9 @@ footer a {
 
 .img-responsive {
   max-width: 100%;
-  display: block;
-  margin: 0 auto;
 }
-.content-container-1 h5 {
+.content-container-1 h5,
+.content-container-2 h5 {
   font-family: "Poppins";
   font-weight: 700;
   line-height: 1.5;
@@ -121,23 +120,85 @@ footer a {
   text-transform: uppercase;
   margin: 0;
 }
-.content-container-1 h3 {
+.content-container-1 h3,
+.content-container-2 h3 {
   font-weight: 700;
   color: #272744;
   font-size: 40px;
-  text-align: left;
-  margin: 0;
+  text-align: center;
+  margin: 0 0 30px 0;
 }
 
-.content-container-1 p {
+.content-container-1 p,
+.content-container-2 p {
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
 }
 
 .content-container-2 {
-  background-color: lightgray;
+  background-color: #f8f8f8;
   padding: 100px;
+}
+
+.grid-3-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+}
+
+.card h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #272744;
+  margin: 30px 0 10px 0;
+  padding: 0;
+}
+
+.card h6 {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #272744;
+  margin: 30px 0 10px 0;
+  padding: 0;
+}
+
+.card p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.btn {
+  color: white;
+  background-color: #272744;
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 2px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-family: "Poppins";
+  font-weight: 700;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.btn:hover {
+  background-color: white;
+  border: 2px solid #272744;
+  color: #272744;
 }
 
 @media (max-width: 960px) {
@@ -178,6 +239,9 @@ footer a {
   .content-container-1 img {
     width: 100%;
     max-width: 400px;
+  }
+  .grid-3-cards {
+    grid-template-columns: 1fr;
   }
 }
 
